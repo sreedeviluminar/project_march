@@ -1,3 +1,5 @@
+import 'package:test/expect.dart';
+
 void main(){
   func1();
   func2("Anu", 20, 8);
@@ -31,8 +33,16 @@ void func2(String name , int age , double cgpa){
  }
 
 ///4. function with return type and with params
- int func4(int a, int b , String c){
-  int sum = a+b;
-  print('sum = $sum   & c = $c');
-  return b;
+ int func4(int a, int b , String c) {
+   int sum = a + b;
+   print('sum = $sum   & c = $c');
+   return b;
  }
+  ///5. lambda / arrow function
+
+   String abc() => "Hello";
+///6. anonymous function
+            //  (){  statements ; }
+            //  (para) { statements ; }
+           //   () => statements;
+           //   (para) => statements;

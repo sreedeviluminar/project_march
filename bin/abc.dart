@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
   String x = "Hello";
   // type allocated according to the initial value => var
@@ -8,5 +10,7 @@ void main(){
   dynamic z = "hello";
           z = 30;
 
+          stdout.write("hello");
+          stdout.writeln("good morning");
 
 }
