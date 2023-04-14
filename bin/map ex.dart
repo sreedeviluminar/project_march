@@ -1,38 +1,14 @@
-void main(){
-
-  //literal way
-  Map m1 = Map();
-  print(m1);
-  m1["mykey"] = 100;
-  m1[2]       = 200;
-  m1.addAll({1:2, "key1" : 3});
-  print(m1);
-
-  Map<String, dynamic> m2 = {"name" : "anu" , "age" : 20, "cgpa" : 7.9 };
-  print(m2);
-  print(m2["name"]);
-
-  Set s1 = {1,3,5,7,9};
-  var m3 = Map.fromIterable(s1);
-  print("$m3 \n$m2");
-  print(m3.values);
-
-  List<String> l1 =["one","two","three","four","five"];
-  Map m4 = Map.fromIterables(l1, s1);
+void main() {
+  var m1 = {};
+  m1["key"] = "value";
+  Map<String, dynamic> m2 = {"key1": 1, "key2": 6.7, "key3": "hello"};
+  var m3 = Map.fromEntries(m2.entries);
+  var l = ["1", "2", "Hello", "hai", 5];
+  var s = {10, 20, 30, 40, 50};
+  var m4 = Map.fromIterable(l);
   print(m4);
-
-  Map m5 = Map.fromEntries(m4.entries);
+  var m5 = Map.fromIterables(l, s);
   print(m5);
 
-  print(m5.containsValue(3));
-  print(m5.containsKey("hello"));
-
-  m5.forEach((key, value) {
-    print("$key : $value");
-  });
-
-  for(var data in m5.keys){  // here data contains all the  keys from m5
-
-    print("$data : ${m5[data]}");    // $data => keys from m5    ${m5[data]} => ${m5[keys]} => all the values corresponding to the key
-  }
+  //List<int> list = [1,2,3,4,5];
 }

@@ -6,7 +6,7 @@ void main(){
   // int a = func3();
   // print(a);
   func3();
-  func4(10, 20, "hai");
+  func4(10, 20, "hai");// actual parametrs
   int b = func4(1,2 ,"good");
   print(b);
   print(func4(100, 200, "EXTRA"));
@@ -33,7 +33,7 @@ void func2(String name , int age , double cgpa){
  }
 
 ///4. function with return type and with params
- int func4(int a, int b , String c) {
+ int func4(int a, int b , String c) { // a,b,c formal parameters
    int sum = a + b;
    print('sum = $sum   & c = $c');
    return b;
