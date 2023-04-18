@@ -8,7 +8,11 @@ class Parent{
    }
 }
 // single inheritance   keyword = extends
+<<<<<<< HEAD
 class Child extends Parent{
+=======
+class Child  extends Parent{
+>>>>>>> github/master
 
   String cname = "Arun";
   int cage     = 6;

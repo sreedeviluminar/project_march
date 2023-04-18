@@ -16,8 +16,13 @@ class Bank{
      print("Card Type   : $cardtype");
      print("Interest    : $interest");
    }
+<<<<<<< HEAD
 }
 
+=======
+
+}
+>>>>>>> github/master
 class Sbi extends Bank{
   String branch = "Kakkanad";
   int int_savings = 7;
