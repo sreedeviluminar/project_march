@@ -1,31 +1,27 @@
-class Bank{
-   String? name;
-   int? since_yr;
-   int? ifsc;
+class Bank {
+  String? name;
+  int? since_yr;
+  int? ifsc;
 
-   void saving(int accno , int minblnc){
-     print("Account no :  $accno");
-     print("Min Balance:  $minblnc");
-   }
+  void saving(int accno, int minblnc) {
+    print("Account no :  $accno");
+    print("Min Balance:  $minblnc");
+  }
 
-   void reccuring(int accountno , int tenure){
-     print("Account no   : $accountno");
-     print("Tenure       : $tenure");
-   }
-   void creditcard(String cardtype , double interest){
-     print("Card Type   : $cardtype");
-     print("Interest    : $interest");
-   }
-<<<<<<< HEAD
+  void reccuring(int accountno, int tenure) {
+    print("Account no   : $accountno");
+    print("Tenure       : $tenure");
+  }
+
+  void creditcard(String cardtype, double interest) {
+    print("Card Type   : $cardtype");
+    print("Interest    : $interest");
+  }
 }
 
-=======
-
-}
->>>>>>> github/master
 class Sbi extends Bank{
   String branch = "Kakkanad";
-  int int_savings = 7;
+  int int_savings = 20000;
 }
 
 void main(){
