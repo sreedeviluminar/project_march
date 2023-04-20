@@ -1,13 +1,10 @@
 import 'dart:io';
-import 'dart:math';
-
 abstract class Bank{
   void savings();
   void deposit(int amount);
   void withdraw();
   void blncCheck();
 }
-
 class Federal extends Bank{
   String name = "Anil";
   int accnt_no = 13669900000;
